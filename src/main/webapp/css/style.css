@@ -1,0 +1,27 @@
+body{
+    background-image: url('../images/images.jpg'); /* Replace with your image path */
+    background-size: cover; /* Ensures the image covers the whole background */    
+    height: 100%; /* Ensures the body takes full viewport height */
+    background-repeat: no-repeat;
+      
+}
+
+.overlay-box{
+	 padding: 200px 0px;
+	 box-sizing: border-box;
+	 background: rgba(0, 0, 0, 0.5);
+	 height: 90%
+}
+
+.container{
+	width: 1200px;
+	margin: 0px auto;
+}
+
+.welcome-text{
+	color:#FFF;
+	font-size: 75px;
+	font-family: raleway-bold;
+	line-height: 90px;
+	text-align: center;
+}
