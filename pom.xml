@@ -27,25 +27,33 @@
 
 
   </dependencies>
-        
-  <settings>
-  ...
-  <servers>
-    ...
-    <server>
-       <id>maven-snapshots</id>
-      <username>admin</username>
-      <password>admin123</password>
-    </server>
-
-     <server>
-      <id>maven-releases</id>
-      <username>admin</username>
-      <password>admin123</password>
-    </server>
-  </servers>
-  ...
-</settings>
+        <repositories>
+        <repository>
+            <id>nexus</id>
+            <name>Nexus Repository</name>
+            <url>https://your-nexus-repo-url.net/content/groups/public/</url>
+            <releases>
+                <enabled>true</enabled>
+            </releases>
+            <snapshots>
+                <enabled>true</enabled>
+            </snapshots>
+        </repository>
+    </repositories>
+    
+    <distributionManagement>
+        <repository>
+            <id>nexus-releases</id>
+            <name>Nexus Releases Repository</name>
+            <url>https://your-nexus-repo-url.net/content/repositories/releases/</url>
+        </repository>
+        <snapshotRepository>
+            <id>nexus-snapshots</id>
+            <name>Nexus Snapshots Repository</name>
+            <url>https://your-nexus-repo-url.net/content/repositories/snapshots/</url>
+        </snapshotRepository>
+    </distributionManagement>
+ 
 
   <build>
     <finalName>EandETechSolution</finalName>
