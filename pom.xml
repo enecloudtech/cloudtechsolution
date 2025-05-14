@@ -27,21 +27,25 @@
 
 
   </dependencies>
-
+        
+  <settings>
+  ...
   <servers>
-  
+    ...
     <server>
+       <id>maven-snapshots</id>
+      <username>admin</username>
+      <password>admin123</password>
+    </server>
+
+     <server>
       <id>maven-releases</id>
       <username>admin</username>
       <password>admin123</password>
     </server>
-
-      <server>
-      <id>maven-snapshots</id>
-      <username>admin</username>
-      <password>admin123</password>
-    </server>
   </servers>
+  ...
+</settings>
 
   <build>
     <finalName>EandETechSolution</finalName>
